@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gives me conniptions.</title>
+</head>
+<link rel="stylesheet" type="text/css" href="conniptions.css">
+
+<audio id="audio">
+  <source src="conniptions.mp3" type="audio/mpeg">
+  <source src="conniptions.m4a" type="audio/mpeg">
+  <source src="conniptions.wav" type="audio/wav">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+<div>
+<button id="button">give</button>
+</div>
+<script type="text/javascript">
+  var audio = document.getElementById('audio');
+  var button = document.getElementById('button');
+
+  function unpress() {
+    button.classList.remove("pressed");
+  }
+
+  function conniptions() {
+    button.classList.add("pressed");
+    audio.play();
+    var delay = 1000;
+    setTimeout(unpress,delay);
+  };
+
+  button.addEventListener('click', conniptions, false);
+</script>
+</body>
+</html>

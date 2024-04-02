@@ -1,5 +1,5 @@
 html { height: 100%; }
-body { min-height: 100%; margin: 0; display: flex; justify-content: center; align-items: center; background: repeat center/150% url("conniptions.jpg");}
+body { min-height: 100%; margin: 0; display: flex; justify-content: center; align-items: center; background: repeat center/125% url("conniptions.jpg");}
 button { 
   border-radius: 50%; 
   width: 200px;
